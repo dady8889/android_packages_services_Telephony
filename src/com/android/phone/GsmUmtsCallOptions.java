@@ -72,5 +72,6 @@ public class GsmUmtsCallOptions extends PreferenceActivity {
         Preference callBarringPref = prefScreen.findPreference(BUTTON_CB_EXPAND_KEY);
         callBarringPref.getIntent().putExtra(PhoneConstants.SUBSCRIPTION_KEY,
                 subInfoHelper.getSubId());
+        prefScreen.removePreference(callBarringPref);
     }
 }
