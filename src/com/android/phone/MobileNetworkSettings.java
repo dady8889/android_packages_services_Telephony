@@ -1296,7 +1296,7 @@ public class MobileNetworkSettings extends PreferenceActivity
     }
 
     private boolean isWorldMode() {
-        boolean worldModeOn = false;
+        boolean worldModeOn = true;
         final TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         final String configString = getResources().getString(R.string.config_world_mode);
 
